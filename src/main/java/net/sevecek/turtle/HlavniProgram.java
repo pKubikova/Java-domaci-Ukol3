@@ -9,8 +9,9 @@ public class HlavniProgram {
 
     public void main(String[] args) {
         snehuliak();
-        zmrzlina();
         vlacik();
+        zmrzlina();
+
     }
 
     public void snehuliak() {
@@ -84,6 +85,7 @@ public class HlavniProgram {
         }
     }
 
+
     public void nakresliRovnoramennyTrojuholnik(double dlzkaRamenaAB, double uhol) {
         zofka.move(vypocitejDelkuZakladne(dlzkaRamenaAB, uhol));
         double uholUZakladne = 180 - ((180 - uhol) / 2);
@@ -93,6 +95,7 @@ public class HlavniProgram {
             zofka.move(dlzkaRamenaAB);
             zofka.turnRight(180 - uhol);
         }
+
     }
 
 
